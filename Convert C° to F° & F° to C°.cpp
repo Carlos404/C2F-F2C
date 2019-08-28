@@ -25,28 +25,28 @@ int f2c(int f)
 int main() {
 	setlocale(LC_ALL, "Portuguese");
 	while (menu != 1 && menu != 2) {
-	cout << "Digite 1 se quer converter C° para F°\n" <<
-			"Digite 2 se quer converter F° para C°\n";
+	cout << "Digite 1 se quer converter CÂ° para FÂ°\n" <<
+			"Digite 2 se quer converter FÂ° para CÂ°\n";
 			
 	cin >> menu;
 	switch (menu) {	
 	case 1:
 		int c;
-		cout << "Digite o valor em C°";
+		cout << "Digite o valor em CÂ°";
 		cin >> c;
-		cout << c << "°C em F°, é: " << c2f(c) <<"F°\n";
+		cout << c << "Â°C em FÂ°, Ã©: " << c2f(c) <<"FÂ°\n";
 	break;
 		
 	case 2:
 		int f;
-		cout << "Digite o valor em F° ";
+		cout << "Digite o valor em FÂ° ";
 		cin >> f;
-		cout << f << "°F em C°, é: " << f2c(f) <<"C°\n";
+		cout << f << "Â°F em CÂ°, Ã©: " << f2c(f) <<"CÂ°\n";
 	break;
 	}	
 	
 	if (menu != 1 && menu != 2) {
-		cout << "A opção " << menu <<" é inválida\n";
+		cout << "A opÃ§Ã£o " << menu <<" Ã© invÃ¡lida\n";
 	}
 	
 }
